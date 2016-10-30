@@ -7,8 +7,18 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <%= render "layouts/navbar" %>
+    <div class="container">
+      <div class="row" id="row-main">
+        <div class="col-md-3 collapsed" id="sidebar">
+          <%= render 'layouts/sidebar' %>
+        </div>
+        <div class="col-md-12" id="content">
+          <%= render 'layouts/modal' %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
