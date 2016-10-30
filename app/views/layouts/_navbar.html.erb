@@ -2,13 +2,15 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <div class="navbar-brand" >
-        <span id="sidebar-toggle" class="glyphicon glyphicon-menu-hamburger"/>
-        <span>FreshTomatos</a>
+        <span id="sidebar-toggle" class="glyphicon glyphicon-menu-hamburger" onClick="sidebar.toggle()"/>
       </div>
     </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">FreshTomatos</a></li>
+    </ul>
     <div class="navbar-right">
       <%= form_tag(movies_index_path, :method => "get", class: "navbar-search navbar-form") do %>
-        <div class="input-group">
+        <div class="input-group search-bar">
           <%= text_field_tag :search, params[:search], placeholder: "Search Movies", 
               class:"search-bar form-control form-inverse pull-right" %>
           <span class="input-group-btn">

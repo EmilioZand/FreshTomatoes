@@ -1,8 +1,11 @@
 @Movie = React.createClass
+ formatTitle: ()->
+    @props.movie.title + ' (' + parseInt(@props.movie.release_date) + ')'
+
   handleClick: (e) ->
     e.preventDefault()
     document.getElementById('modal-poster').setAttribute('src', @props.movie.image_url)
-    document.getElementById('modal-title').innerHTML = @props.movie.title
+    document.getElementById('modal-title').innerHTML = @formatTitle()
     document.getElementById('modal-description').innerHTML = @props.movie.description
     document.getElementById('modal-rating').innerHTML = 'Rating: ' + @props.movie.rating + '/5.0'
     $('#myModal').modal({show:true})

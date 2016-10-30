@@ -3,47 +3,8 @@ body {
   padding-top: 50px;
 }
 
-#sidebar {
-  height: 100%;
-  padding-right: 0;
-  padding-top: 20px;
-  transition: margin 0.3s ease;
-}
-
-#sidebar .nav {
-  width: 95%;
-}
-
-#sidebar li {
-  border:0 #f2f2f2 solid;
-  border-bottom-width:1px;
-}
-
-#sidebar-toggle {
-  cursor: pointer; cursor: hand;
-}
-
 @media only screen and (max-width : 768px) {
   body {
     padding-top: 122px;
   }
-}
-
-.collapsed {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .collapsed {
-    display: block;
-    margin-left: -25%;
-  }
-}
-
-#row-main {
-  overflow-x: hidden;
-}
-
-#content {
-  transition: width 0.3s ease;
 }

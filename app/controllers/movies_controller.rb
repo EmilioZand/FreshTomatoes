@@ -3,6 +3,10 @@ class MoviesController < ApplicationController
     @movies = Movie.all
     if params[:search]
       @movies = Movie.search(params[:search])
+    elsif params[:genre]
+      @movies = Movie.where(genre: params[:genre])
+    elsif params[:new_release]
+      @movies = Movie.new_releases
     else
       @movies = Movie.all
     end
