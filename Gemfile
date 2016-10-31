@@ -11,6 +11,7 @@ gem 'puma', '~> 3.0'
 gem 'react-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use bootstrap for nav and grid
 gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

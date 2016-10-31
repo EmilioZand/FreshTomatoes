@@ -4,10 +4,8 @@
       <div class="navbar-brand" >
         <span id="sidebar-toggle" class="glyphicon glyphicon-menu-hamburger" onClick="sidebar.toggle()"/>
       </div>
+      <a class="navbar-brand" href="/">FreshTomatos</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="/">FreshTomatos</a></li>
-    </ul>
     <div class="navbar-right">
       <%= form_tag(movies_index_path, :method => "get", class: "navbar-search navbar-form") do %>
         <div class="input-group search-bar">
