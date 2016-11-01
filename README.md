@@ -6,6 +6,7 @@ This project was made using Rails5 and ReactJS through the rails-react gem to se
 
 To get the server running, run the following commands:
 > Requires ruby-2.3.1 to be installed
+
 ```
 # Clone the repo
 git clone https://github.com/EmilioZand/FreshTomatoes
@@ -23,6 +24,7 @@ rake db:migrate
 # Start the server
 rails s
 ```
+
 FreshTomatoes can be found at localhost:3000 by default
 
 ## Project Requirements
